@@ -26,7 +26,7 @@ export DYNINST_DIR=<path/to/llvm-dyn-counter>
 ```
 Tip: The default llvm installation directory is `/usr/lib/llvm-17` on linux-based systems.
 
-Next step is to build the project with cmake. Assming you are inside the root folder of this repository:
+Next step is to build the project with cmake. Assuming you are inside the root folder of this repository:
 ```
 mkdir build
 cd build
@@ -85,5 +85,5 @@ However, this is not necessary. LLVM decomposes every function into different Ba
 To optimize the pass:
 - Perform a static analysis over each Basic Block, counting the number of each instruction call.
 - Performa a dynamic analysis of the program counting, for each Basic Block, the number of times it has been executed at runtime
-- Combine the results of the static analysis and the results of the dynamic analysis by multiplyig
+- Combine the results of the static analysis and the results of the dynamic analysis by multiplication
 
